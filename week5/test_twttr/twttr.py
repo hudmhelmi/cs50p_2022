@@ -3,7 +3,6 @@ def main():
     print(f"Output: {shorten(s)}")
 
 
-
 def shorten(word):
     final = ""
     for c in word:

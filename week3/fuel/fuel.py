@@ -3,12 +3,12 @@ while True:
 
     try:
         num, den = fraction.split("/")
-        percentage = (int(num)/int(den)) * 100
+        percentage = (int(num) / int(den)) * 100
     except (ValueError, ZeroDivisionError):
         continue
-    else: 
+    else:
         if percentage > 100:
-            pass  
+            pass
         elif percentage <= 1:
             print("E")
             break

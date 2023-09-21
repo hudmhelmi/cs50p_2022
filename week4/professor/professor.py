@@ -27,7 +27,6 @@ def main():
     print(f"Score: {score}")
 
 
-
 def get_level():
     while True:
         try:
@@ -39,7 +38,6 @@ def get_level():
                 return level
 
 
-
 def generate_integer(level):
     if level == 1:
         return random.randint(0, 9)
@@ -47,7 +45,6 @@ def generate_integer(level):
         return random.randint(10, 99)
     else:
         return random.randint(100, 999)
-
 
 
 if __name__ == "__main__":

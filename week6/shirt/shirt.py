@@ -8,7 +8,10 @@ elif len(sys.argv) > 3:
     sys.exit("Too many command-line arguments")
 elif os.path.splitext(sys.argv[2].lower())[1] not in (".jpg", ".jpeg", ".png"):
     sys.exit("Invalid output")
-elif not os.path.splitext(sys.argv[1].lower())[1] == os.path.splitext(sys.argv[2].lower())[1]:
+elif (
+    not os.path.splitext(sys.argv[1].lower())[1]
+    == os.path.splitext(sys.argv[2].lower())[1]
+):
     sys.exit("Input and output have different extensions")
 elif not os.path.exists(sys.argv[1]):
     sys.exit("Input does not exist")
